@@ -1,0 +1,7 @@
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\bin\WcfAutokauppa.dll.config
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\bin\WcfAutokauppa.dll
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\bin\WcfAutokauppa.pdb
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\obj\Debug\WcfAutokauppa.csprojAssemblyReference.cache
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\obj\Debug\WcfAutokauppa.csproj.CoreCompileInputs.cache
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\obj\Debug\WcfAutokauppa.dll
+C:\Users\pena\Desktop\visual studio rojektit\Autokaupparojekti\WcfAutokauppa\WcfAutokauppa\obj\Debug\WcfAutokauppa.pdb

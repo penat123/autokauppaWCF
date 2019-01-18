@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfAutokauppa" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfAutokauppa" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Kulkuneuvo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AutonMalliID" type="xs:int" />
+      <xs:element minOccurs="0" name="AutonMerkkiID" type="xs:int" />
+      <xs:element minOccurs="0" name="Hinta" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Mittarilukema" type="xs:int" />
+      <xs:element minOccurs="0" name="Moottorintilavuus" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PolttoaineID" type="xs:int" />
+      <xs:element minOccurs="0" name="Rekisteröiti_päivämäärä" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VaritID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Kulkuneuvo" nillable="true" type="tns:Kulkuneuvo" />
+  <xs:complexType name="ArrayOfAutonmerkki">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Autonmerkki" nillable="true" type="tns:Autonmerkki" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAutonmerkki" nillable="true" type="tns:ArrayOfAutonmerkki" />
+  <xs:complexType name="Autonmerkki">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MerkkiNimi" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Autonmerkki" nillable="true" type="tns:Autonmerkki" />
+  <xs:complexType name="Autonmallit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MalliNimi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MerkkiId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Autonmallit" nillable="true" type="tns:Autonmallit" />
+  <xs:complexType name="Vari">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Varit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vari" nillable="true" type="tns:Vari" />
+  <xs:complexType name="Polttoaine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Polttoaineet" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Polttoaine" nillable="true" type="tns:Polttoaine" />
+  <xs:complexType name="ArrayOfAutonmallit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Autonmallit" nillable="true" type="tns:Autonmallit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAutonmallit" nillable="true" type="tns:ArrayOfAutonmallit" />
+  <xs:complexType name="ArrayOfPolttoaine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Polttoaine" nillable="true" type="tns:Polttoaine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolttoaine" nillable="true" type="tns:ArrayOfPolttoaine" />
+  <xs:complexType name="ArrayOfVari">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vari" nillable="true" type="tns:Vari" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVari" nillable="true" type="tns:ArrayOfVari" />
+</xs:schema>

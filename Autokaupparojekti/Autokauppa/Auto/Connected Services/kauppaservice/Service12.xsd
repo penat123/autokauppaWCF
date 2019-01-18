@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57430/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfAutokauppa" />
+  <xs:element name="connectDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="connectDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAutoIntoDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="tallenne" nillable="true" type="q1:Kulkuneuvo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAutoIntoDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveAutoIntoDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAutoMakersFromDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAutoMakersFromDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="GetAllAutoMakersFromDatabaseResult" nillable="true" type="q2:ArrayOfAutonmerkki" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValmisMalli">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="malliID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValmisMalliResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="HaeValmisMalliResult" nillable="true" type="q3:Autonmallit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValittuVäri">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VariID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValittuVäriResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="HaeValittuVäriResult" nillable="true" type="q4:Vari" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValittuPolttoaine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PolttoaineID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValittuPolttoaineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="HaeValittuPolttoaineResult" nillable="true" type="q5:Polttoaine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutoModelsByMakerId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="makerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAutoModelsByMakerIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="GetAutoModelsByMakerIdResult" nillable="true" type="q6:ArrayOfAutonmallit" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValmisMerkki">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="merkkiID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaeValmisMerkkiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="HaeValmisMerkkiResult" nillable="true" type="q7:Autonmerkki" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaePolttoaine">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HaePolttoaineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="HaePolttoaineResult" nillable="true" type="q8:ArrayOfPolttoaine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="haeVari">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="haeVariResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="haeVariResult" nillable="true" type="q9:ArrayOfVari" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SeuraavaAutoTietokannassa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nykyinen" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SeuraavaAutoTietokannassaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="SeuraavaAutoTietokannassaResult" nillable="true" type="q10:Kulkuneuvo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EdellinenAutoTietokannassa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nykyinen" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EdellinenAutoTietokannassaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfAutokauppa" minOccurs="0" name="EdellinenAutoTietokannassaResult" nillable="true" type="q11:Kulkuneuvo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="disconnectDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="disconnectDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
